@@ -1,0 +1,156 @@
+/* Contenedor principal */
+.counter {
+  text-align: center;
+  background: #C39898; /* Rosa pastel */
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  width: 400px;
+  margin: auto;
+  color: #987070; /* Texto marrón rosado */
+}
+
+.counter h1 {
+  font-size: 2rem;
+  margin-bottom: 0.3rem;
+  color: #DBB5B5;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.589);
+
+}
+
+.counter h2 {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  color: #987070;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.589);
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+.counter h2:hover {
+  transform: scale(1.05);
+  background: #C39898;
+  color: #F1E5D1;
+}
+
+/* Contador */
+.contador-box {
+  margin-bottom: 2rem;
+}
+
+.numero {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  background: #F1E5D1;
+  color: #987070;
+  padding: 1rem;
+  border-radius: 12px;
+  transition: transform 0.2s ease, background 0.3s ease;
+  cursor: pointer;
+}
+
+.numero:hover {
+  transform: scale(1.1);
+  background: #987070;
+  color: #F1E5D1;
+}
+
+/* Botones */
+.botones {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+button {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: #fff;
+}
+
+button:focus {
+  outline: 2px solid #987070;
+}
+
+.btn-red {
+  background: #987070;
+}
+
+.btn-red:hover {
+  background: #F1E5D1;
+  transform: translateY(-2px);
+}
+
+.btn-green {
+  background: #987070;
+}
+
+.btn-green:hover {
+  background: #F1E5D1;
+  transform: translateY(-2px);
+}
+
+.btn-reset {
+  background: #DBB5B5;
+}
+
+.btn-reset:hover {
+  background: #987070;
+  color: #F1E5D1;
+  transform: translateY(-2px);
+}
+.btnenviar {
+  background: #987070;
+}
+.btnenviar:hover {
+  background: #DBB5B5;
+  transform: translateY(-2px);
+}
+
+/* Form */
+form {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+input {
+  padding: 0.6rem;
+  border-radius: 8px;
+  border: 1px solid #987070;
+  outline: none;
+  font-size: 2rem;
+  width: 180px;
+  background: #F1E5D1;
+  color: #987070;
+}
+
+input:focus {
+  border: 1px solid #C39898;
+  box-shadow: 0 0 8px rgba(195, 152, 152, 0.7);
+}
+
+/* Mensaje  */
+.mensaje {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  color: #987070;
+  font-weight: 500;
+  background: rgba(241, 229, 209, 0.8);
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  animation: aparecer 0.3s ease-in-out;
+}
+
+@keyframes aparecer {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
