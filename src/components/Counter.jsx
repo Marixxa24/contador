@@ -7,7 +7,7 @@ function Counter() {
   const [inputValue, setInputValue] = useState("")
 
   const incrementar = () => setCount(count + 1)
-  const decrementar = () => setCount(count - 1)
+  const decrementar = () => setCount(prev => Math.max(prev - 1, 0)) // 🔥 no baja de 0
   const reiniciar = () => setCount(0)
 
   const handleSubmit = (e) => {
